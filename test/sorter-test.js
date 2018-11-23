@@ -17,4 +17,11 @@ describe('sorter class', function(){
     var sorter = new Sorter;
     assert.deepEqual(sorter.bubbleSortAsc(unsortedArray), sortedArray);
   })
+
+  it('should sort an array of numbers high to low', function(){
+    var unsortedArray = [4,3,1,2,5];
+    var sortedArray = [5,4,3,2,1];
+    var sorter = new Sorter;
+    assert.deepEqual(sorter.bubbleSortDesc(unsortedArray), sortedArray);
+  })
 })
