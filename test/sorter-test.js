@@ -15,6 +15,6 @@ describe('sorter class', function(){
     var unsortedArray = [4,3,1,2,5];
     var sortedArray = [1,2,3,4,5];
     var sorter = new Sorter;
-    assert.deepEqual(sorter.bubbleSort(unsortedArray), sortedArray);
+    assert.deepEqual(sorter.bubbleSortAsc(unsortedArray), sortedArray);
   })
 })
